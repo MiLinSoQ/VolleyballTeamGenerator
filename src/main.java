@@ -99,7 +99,7 @@ public class main {
 				setting.setOverhandLevel(settingObj.getInt("Overhand"));
 				
 				
-				VolleyballData vData = new VolleyballData(serve, attack, defence, position);
+				VolleyballData vData = new VolleyballData(serve, attack, defence, setting, position);
 				vData.setPosition(position);	
 				players.add(new Player(name, genderValue, vData));
 			}
@@ -111,35 +111,51 @@ public class main {
 		return players;
 	}
 	
-	public static ArrayList<Team> generatorTeam(ArrayList<Player> players) {
+	public static ArrayList<Team> generatorTeam(List<Player> players) {
 		ArrayList<Team> teams = new ArrayList<>();
 		if (players.size() == 0 || (players.size() % 6) != 0) return teams;
-		// sortGender(players);
+		
+	
+		sortGender(players);
 		
 		for (Player player : players) {
 			if (player == null) continue;
 			
-			
-			
+			player.printString();
 			
 		}
 		
 		return teams;
 	}
 	
-	private static void sortGender(ArrayList<Person> crowd) {
+	private static void sortGender(List<?> crowd) {
+		
 		if (crowd.size() <= 1) return;
 		
 		int rightIndex = crowd.size() - 1;
 		int leftIndex = 0;
 		
-		while (rightIndex != leftIndex) {
-			Person personL = (Person) crowd.get(leftIndex);
-			Person personR = (Person) crowd.get(rightIndex);
+		while (rightIndex > leftIndex && rightIndex > 0 && leftIndex < crowd.size()) {
+			Person personL = ((Person) crowd.get(leftIndex));
+			Person personR = ((Person) crowd.get(rightIndex));
+			Person tmp;
+			
+			
+			System.out.println("left index: " + leftIndex);
+			System.out.println("right index: " + rightIndex);
 			
 			if (personL.getGender().isMale()) {
 				leftIndex ++;
-				continue;
+			} else {
+				if (personR.getGender().isMale()) {
+					System.out.println("swap: " + leftIndex + ", " + rightIndex);
+					
+					Collections.swap(crowd, leftIndex, rightIndex);
+					leftIndex ++;
+					rightIndex --;
+				} else {
+					rightIndex --;
+				}
 			}
 		}
 	}

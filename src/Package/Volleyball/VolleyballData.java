@@ -16,19 +16,20 @@ public class VolleyballData implements PrintInterface {
 	
 	private Setting setting;
 	
-	public VolleyballData(Serve serve, Attack attack, Defence defence, Position position) {
+	public VolleyballData(Serve serve, Attack attack, Defence defence, Setting setting, Position position) {
 		this.serve = serve;
 		this.attack = attack;
 		this.defence = defence;
 		this.position = position;
+		this.setting = setting;
 	}
 	
-	public VolleyballData(Serve serve, Attack attack, Defence defence, int position) {
-		this(serve, attack, defence, new Position(position));
+	public VolleyballData(Serve serve, Attack attack, Defence defence, Setting setting, int position) {
+		this(serve, attack, defence, setting, new Position(position));
 	}
 	
 	public VolleyballData() {
-		this(new Serve(), new Attack(), new Defence(), new Position(Position.POSITION_VALUE_UNDEFINED));
+		this(new Serve(), new Attack(), new Defence(), new Setting(), new Position(Position.POSITION_VALUE_UNDEFINED));
 	}
 	
 	public void setPosition(int position) {
@@ -55,11 +56,17 @@ public class VolleyballData implements PrintInterface {
 		return this.defence;
 	}
 	
+	public Setting getSetting() {
+		return this.setting;
+	}
+	
+	
 	public String toString() {
-		String str = String.format("Serve score: [ %d ] | Attack score: [ %d ] | Defence score: [ %d ]",
+		String str = String.format("Serve score: [ %d ] | Attack score: [ %d ] | Defence score: [ %d ] | Setting score: [ %d ]",
 			this.serve.getScore(),
 			this.attack.getScore(),
-			this.defence.getScore());
+			this.defence.getScore(),
+			this.setting.getScore());
 		return str;
 	}
 	
