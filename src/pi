@@ -1,0 +1,188 @@
+[
+	{
+		"Name": "Jacky", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Libero", "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 2,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 4
+			},
+			
+			"Set":
+			{
+				"Underhand": 5,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Amber", 
+		"Gender": "Female",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 5,
+				"Tip": 5
+			},
+			
+			"Defence": 
+			{
+				"Pass": 4
+			},
+			
+			"Set":
+			{
+				"Underhand": 4,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Bear", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 3
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 3,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Set":
+			{
+				"Underhand": 2,
+				"Overhand": 4
+			}
+		}
+	},
+	
+	{
+		"Name": "Tan", 
+		"Gender": "Female",
+		"Volletball_Position": [ "Hitter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 2
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 3,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Set":
+			{
+				"Underhand": 3,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Wade", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 5,
+				"Overhand": 3
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 5,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 5
+			},
+			
+			"Set":
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			}
+		}
+	},
+	
+	{
+		"Name": "Qing", 
+		"Gender": "Female",
+		"Volletball_Position": [  ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 1
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 2,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Set":
+			{
+				"Underhand": 2,
+				"Overhand": 1
+			}
+		}
+	}
+]
+	
