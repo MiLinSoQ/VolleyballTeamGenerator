@@ -15,7 +15,6 @@ public class Player extends Person {
 		this(name, gender, null);
 	}
 	
-	
 	public String toString() {
 		String str = super.toString();
 		

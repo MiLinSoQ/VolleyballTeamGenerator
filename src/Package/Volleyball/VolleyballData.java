@@ -14,6 +14,8 @@ public class VolleyballData implements PrintInterface {
 	
 	private Defence defence;
 	
+	private Setting setting;
+	
 	public VolleyballData(Serve serve, Attack attack, Defence defence, Position position) {
 		this.serve = serve;
 		this.attack = attack;
@@ -45,7 +47,6 @@ public class VolleyballData implements PrintInterface {
 		return this.serve;
 	}
 	
-	
 	public Attack getAttack() {
 		return this.attack;
 	}
@@ -53,7 +54,6 @@ public class VolleyballData implements PrintInterface {
 	public Defence getDefence() {
 		return this.defence;
 	}
-	
 	
 	public String toString() {
 		String str = String.format("Serve score: [ %d ] | Attack score: [ %d ] | Defence score: [ %d ]",

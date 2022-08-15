@@ -22,7 +22,7 @@
 				"Pass": 4
 			},
 			
-			"Set":
+			"Setting":
 			{
 				"Underhand": 5,
 				"Overhand": 2
@@ -53,7 +53,7 @@
 				"Pass": 4
 			},
 			
-			"Set":
+			"Setting":
 			{
 				"Underhand": 4,
 				"Overhand": 2
@@ -84,7 +84,7 @@
 				"Pass": 2
 			},
 			
-			"Set":
+			"Setting":
 			{
 				"Underhand": 2,
 				"Overhand": 4
@@ -115,7 +115,7 @@
 				"Pass": 2
 			},
 			
-			"Set":
+			"Setting":
 			{
 				"Underhand": 3,
 				"Overhand": 2
@@ -146,7 +146,7 @@
 				"Pass": 5
 			},
 			
-			"Set":
+			"Setting":
 			{
 				"Underhand": 3,
 				"Overhand": 5
@@ -177,7 +177,193 @@
 				"Pass": 2
 			},
 			
-			"Set":
+			"Setting":
+			{
+				"Underhand": 2,
+				"Overhand": 1
+			}
+		}
+	},
+	
+	{
+		"Name": "Jacky2", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Libero", "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 2,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 4
+			},
+			
+			"Setting":
+			{
+				"Underhand": 5,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Amber2", 
+		"Gender": "Female",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 5,
+				"Tip": 5
+			},
+			
+			"Defence": 
+			{
+				"Pass": 4
+			},
+			
+			"Setting":
+			{
+				"Underhand": 4,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Bear2", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 3
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 3,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Setting":
+			{
+				"Underhand": 2,
+				"Overhand": 4
+			}
+		}
+	},
+	
+	{
+		"Name": "Tan2", 
+		"Gender": "Female",
+		"Volletball_Position": [ "Hitter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 2
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 3,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Setting":
+			{
+				"Underhand": 3,
+				"Overhand": 2
+			}
+		}
+	},
+	
+	{
+		"Name": "Wade2", 
+		"Gender": "Male",
+		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 5,
+				"Overhand": 3
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 5,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 5
+			},
+			
+			"Setting":
+			{
+				"Underhand": 3,
+				"Overhand": 5
+			}
+		}
+	},
+	
+	{
+		"Name": "Qing2", 
+		"Gender": "Female",
+		"Volletball_Position": [  ],
+		"Volletball_Data": 
+		{
+			"Serve": 
+			{
+				"Underhand": 3,
+				"Overhand": 1
+			},
+		
+			"Attack": 
+			{ 
+				"Spike": 2,
+				"Tip": 3
+			},
+			
+			"Defence": 
+			{
+				"Pass": 2
+			},
+			
+			"Setting":
 			{
 				"Underhand": 2,
 				"Overhand": 1

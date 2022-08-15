@@ -33,11 +33,13 @@ public class main {
 			System.out.println("Player count: " + players.size());
 		}
 		
-		Team team = new Team();
-		team.addPlayer(players);
-		
-		team.printString();
-		
+		ArrayList<Team> teams = generatorTeam(players);
+		if (teams != null && teams.size() > 0) {
+			for (Team team : teams) {
+				if (team == null) continue;
+				team.printString();
+			} 
+		}
 	}
 	
 	public static String readPlayerInformation(String path) {
@@ -79,7 +81,7 @@ public class main {
 				JSONObject serveObj = skillObj.getJSONObject("Serve");
 				JSONObject attackObj = skillObj.getJSONObject("Attack");
 				JSONObject defenceObj = skillObj.getJSONObject("Defence");
-				JSONObject setObj = skillObj.getJSONObject("Set");
+				JSONObject settingObj = skillObj.getJSONObject("Setting");
 				
 				Serve serve = new Serve();
 				serve.setUnderhandLevel(serveObj.getInt("Underhand"));
@@ -92,13 +94,14 @@ public class main {
 				Defence defence = new Defence();
 				defence.setPassLevel(defenceObj.getInt("Pass"));
 				
+				Setting setting = new Setting();
+				setting.setUnderhandLevel(settingObj.getInt("Underhand"));
+				setting.setOverhandLevel(settingObj.getInt("Overhand"));
+				
+				
 				VolleyballData vData = new VolleyballData(serve, attack, defence, position);
-				vData.setPosition(position);
-				
-				Player player = new Player(name, genderValue, vData);
-				player.printString();
-				
-				players.add(player);
+				vData.setPosition(position);	
+				players.add(new Player(name, genderValue, vData));
 			}
 			
 		} catch (Exception ex) {
@@ -106,6 +109,39 @@ public class main {
 		}
 		
 		return players;
+	}
+	
+	public static ArrayList<Team> generatorTeam(ArrayList<Player> players) {
+		ArrayList<Team> teams = new ArrayList<>();
+		if (players.size() == 0 || (players.size() % 6) != 0) return teams;
+		// sortGender(players);
+		
+		for (Player player : players) {
+			if (player == null) continue;
+			
+			
+			
+			
+		}
+		
+		return teams;
+	}
+	
+	private static void sortGender(ArrayList<Person> crowd) {
+		if (crowd.size() <= 1) return;
+		
+		int rightIndex = crowd.size() - 1;
+		int leftIndex = 0;
+		
+		while (rightIndex != leftIndex) {
+			Person personL = (Person) crowd.get(leftIndex);
+			Person personR = (Person) crowd.get(rightIndex);
+			
+			if (personL.getGender().isMale()) {
+				leftIndex ++;
+				continue;
+			}
+		}
 	}
 }
 
