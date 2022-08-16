@@ -4,11 +4,19 @@ import Package.Volleyball.*;
 
 public class Player extends Person {
 
-	public VolleyballData vData;
+	private VolleyballData vData;
 	
 	public Player(String name, int gender, VolleyballData data) {
 		super(name, gender);
 		this.vData = data;
+	}
+	
+	public VolleyballData getVolleyData() { 
+		return this.vData;
+	}
+	
+	public double getVolleyAverage() {
+		return this.vData.getAverage();
 	}
 	
 	public Player(String name, int gender) {

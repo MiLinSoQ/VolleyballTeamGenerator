@@ -2,7 +2,7 @@
 	{
 		"Name": "Jacky", 
 		"Gender": "Male",
-		"Volletball_Position": [ "Libero", "Hitter", "Setter" ],
+		"Volletball_Position": [ "Libero" ],
 		"Volletball_Data": 
 		{
 			"Serve": 
@@ -33,7 +33,7 @@
 	{
 		"Name": "Amber", 
 		"Gender": "Female",
-		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Position": [ "Hitter" ],
 		"Volletball_Data": 
 		{
 			"Serve": 
@@ -64,7 +64,7 @@
 	{
 		"Name": "Bear", 
 		"Gender": "Male",
-		"Volletball_Position": [ "Hitter", "Setter" ],
+		"Volletball_Position": [ "Setter" ],
 		"Volletball_Data": 
 		{
 			"Serve": 
@@ -188,7 +188,7 @@
 	{
 		"Name": "Jacky2", 
 		"Gender": "Male",
-		"Volletball_Position": [ "Libero", "Hitter", "Setter" ],
+		"Volletball_Position": [ "Libero" ],
 		"Volletball_Data": 
 		{
 			"Serve": 
@@ -267,7 +267,7 @@
 			
 			"Defence": 
 			{
-				"Pass": 2
+				"Pass": 3
 			},
 			
 			"Setting":
@@ -298,7 +298,7 @@
 			
 			"Defence": 
 			{
-				"Pass": 2
+				"Pass": 3
 			},
 			
 			"Setting":
@@ -360,7 +360,7 @@
 			
 			"Defence": 
 			{
-				"Pass": 2
+				"Pass": 3
 			},
 			
 			"Setting":

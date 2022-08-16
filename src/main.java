@@ -115,8 +115,7 @@ public class main {
 		ArrayList<Team> teams = new ArrayList<>();
 		if (players.size() == 0 || (players.size() % 6) != 0) return teams;
 		
-	
-		sortGender(players);
+		sortVolleyAverage(players);
 		
 		for (Player player : players) {
 			if (player == null) continue;
@@ -138,24 +137,34 @@ public class main {
 		while (rightIndex > leftIndex && rightIndex > 0 && leftIndex < crowd.size()) {
 			Person personL = ((Person) crowd.get(leftIndex));
 			Person personR = ((Person) crowd.get(rightIndex));
-			Person tmp;
-			
-			
-			System.out.println("left index: " + leftIndex);
-			System.out.println("right index: " + rightIndex);
 			
 			if (personL.getGender().isMale()) {
 				leftIndex ++;
 			} else {
 				if (personR.getGender().isMale()) {
-					System.out.println("swap: " + leftIndex + ", " + rightIndex);
-					
 					Collections.swap(crowd, leftIndex, rightIndex);
 					leftIndex ++;
 					rightIndex --;
 				} else {
 					rightIndex --;
 				}
+			}
+		}
+	}
+	
+	private static void sortVolleyAverage(List<Player> players) {
+		if (players.size() <= 1) return;
+		
+		int count = players.size();
+		for (int i = 0; i < count; i ++) {
+			for (int j = i + 1; j < count; j ++) {
+				Player playerA = players.get(i);
+				Player playerB = players.get(j);
+				
+				if (playerA.getVolleyAverage() < playerB.getVolleyAverage()) {
+					Collections.swap(players, i, j);
+				}
+				
 			}
 		}
 	}
